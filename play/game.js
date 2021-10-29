@@ -464,8 +464,15 @@
         timestamp: newdate,
       },
     };
-    db.collection("leaderboard").doc(audioname).set(lbData, { merge: true });
-  };
+      firebase.firestore().collection("leaderboard").doc(audioname).get().then((doc) => {
+        oldscore = doc.data()[firebase.auth().currentUser.uid].score
+      })
+    if (typeof oldscore !== 'undefined') {
+      if (scoreval > oldscore) {
+        db.collection("leaderboard").doc(audioname).set(lbData, { merge: true });
+      };
+    }
+  }
 
   window.addEventListener("load", getParameter, false);
   let canvas,
