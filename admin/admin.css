@@ -1,0 +1,67 @@
+label {
+    background-color: #5a5a5a;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+.save_btn {
+  background-color: #008d6a;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+  color: white;
+  box-shadow: black 5px 8px 5px;
+  z-index: 1;
+  position: relative;
+  display: block;
+  left: 485px;
+  top: 2px;
+}
+
+.input_area2 {
+  background-color: #3a3a3a;
+  height: 500px;
+  width: 1080px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 15px;
+  padding: 20px;
+  border: 0px;
+  box-shadow: black 5px 8px 5px;
+  color: white;
+  z-index: 5;
+  resize: both;
+  overflow: auto;
+}

@@ -1,0 +1,30 @@
+[
+    { "w": "What color's the sky?", "s": 11 }, 
+    { "w": "Ay mi amor, ay mi amor!", "s": 13 }, 
+    { "w": "You tell me that it's red", "s": 15 }, 
+    { "w": "Ay mi amor, ay mi amor!", "s": 17 }, 
+
+    { "w": "Where should I put my shoes?", "s": 19 }, 
+    { "w": "Ay mi amor, ay mi amor!", "s": 20 }, 
+    { "w": "You say 'Put them on your head!'", "s": 22 }, 
+    { "w": "Ay mi amor, ay mi amor!", "s": 25 }, 
+
+    { "w": "You make me un poco loco", "s": 28 }, 
+    { "w": "Un poquititito loco", "s": 30 }, 
+    { "w": "The way you keep me guessing", "s": 31 }, 
+    { "w": "I'm nodding and i'm yesing", "s": 33 }, 
+
+    { "w": "I'll count it as a blessing", "s": 36 }, 
+    { "w": "That I'm only un poco loco", "s": 40 }, 
+
+
+    { "w": "The loco that you make me", "s": 65 }, 
+    { "w": "It is just un poco crazy", "s": 67 }, 
+    { "w": "The sense that you're not making", "s": 69 }, 
+    { "w": "The liberties you're taking", "s": 71 }, 
+
+    { "w": "Leaves my cabeza shaking", "s": 73 }, 
+    { "w": "You're just un poco loco", "s": 78 }, 
+
+    { "w": "Un poquititititititititititititito loco", "s": 98 }
+]

@@ -1,0 +1,21 @@
+{
+    "name": "KaraokeType",
+    "short_name": "karaoketype",
+    "theme_color": "#4a4a4a",
+    "background_color": "#3a3a3a",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "/kt_resized.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/kt_resized_small.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ]
+}

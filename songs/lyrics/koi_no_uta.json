@@ -1,0 +1,39 @@
+[
+  { "w": "Ato dore kurai no", "s": 3 },
+  { "w": "Kyori o tsuki e aruitara", "s": 6 },
+  { "w": "Ato dore kurai no", "s": 9 },
+  { "w": "samui yoru o kasanetara", "s": 12 },
+  { "w": "Ato dore kurai no", "s": 15 },
+  { "w": "sayonara o nagashitara", "s": 18 },
+  { "w": "Mabuta no oku no", "s": 21 },
+  { "w": "izumi ga kare", "s": 22 },
+  { "w": "hateru, to ka", "s": 24 },
+  { "w": "sen nen go mo", "s": 26 },
+  { "w": "kitto tsuzukudaro", "s": 28 },
+  { "w": "So motteta", "s": 29 },
+  { "w": "kudo o", "s": 30 },
+  { "w": "Mitashite afureteshimau", "s": 33 },
+  { "w": "hodo no kono", "s": 35 },
+  { "w": "kimochi wa nanda?", "s": 37 },
+  { "w": "Tanjundayo Maiasa no 'ohayo'", "s": 38 },
+  { "w": "Eiga mitai ni aoi natsu", "s": 40 },
+  { "w": "No umi o mite toui tokoro de", "s": 41 },
+  { "w": "ibasho o shiri ima to ima", "s": 42 },
+  { "w": "Kasaneteku, firumi no yo ni", "s": 45 },
+  { "w": "Nankai mo torinaoshida", "s": 46 },
+  {
+    "w": "Iroaseru yori, irodoru yori, Kimi no iru keshiki ga ko ina",
+    "s": 50
+  },
+  { "w": "Chokkan de mo tossa de mo ii sou omottanda tada mayoi na", "s": 52 },
+  { "w": "Shinjite mo ii ka to kikareta tatta sore dake no toi da", "s": 55 },
+  { "w": "kangaeteru nda donna toki mo ano koe ga tsukimatoi nagara", "s": 58 },
+  {
+    "w": "Kono oshiteru zutto senaka o sou ka kono kimochi ga koi da",
+    "s": 61
+  },
+  { "w": "Sen nen mae no tomoshibi ni nobashita nihon no yubi ga", "s": 75 },
+  { "w": "Sen nen go mo zutto mukou de kagayaiteru to ii na", "s": 79 },
+  { "w": "Shinjite mo ii sou kikoeta manmaru na tsuki, aoi da", "s": 82 },
+  { "w": "Terashiteta itsu no yo mo sou ka kono kimochi ga koi da", "s": 85 }
+]

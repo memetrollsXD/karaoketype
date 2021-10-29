@@ -1,0 +1,96 @@
+[
+    { "w": "SLOW MOTION yukkuri kawatte yuku", "s": 15 }, 
+
+    { "w": "konbini yotte bentou katte", "s": 28 }, 
+    { "w": "heya ni kaette terebi wo mite ta", "s": 31 }, 
+    { "w": "kuizu no kotae dakyou to shitte", "s": 33 }, 
+    { "w": "yume to kotaeru boke wo tsuduke te", "s": 37 }, 
+
+    { "w": "netsu ga dechatte kusuri wo non de", "s": 39 }, 
+    { "w": "futon mogutte me wo toji te i ta", "s": 42 }, 
+    { "w": "kimi no manuke na kao ga ukan de", "s": 46 }, 
+    { "w": "mada shini taku nai nante nobose nagara", "s": 49 }, 
+
+    { "w": "juu dai doya gao de satotta hito", "s": 52 }, 
+    { "w": "ni juu dai haji ni kidui ta hito", "s": 55 }, 
+    { "w": "san juu dai minotake shitta hito", "s": 58 }, 
+    { "w": "sono dore mo ga zenbu onaji hito", "s": 61 }, 
+
+    { "w": "ase wo kai te ne maki wo kigae tara", "s": 65 }, 
+    { "w": "tokei no hari gozen rei ji", "s": 67 }, 
+    { "w": "kono kyoku ha ima ippun to chotto", "s": 70 }, 
+    { "w": "anata ha ima umare te nan nen?", "s": 73 }, 
+
+    { "w": "SLOW MOTION youshou kara rounen made", "s": 76 }, 
+    { "w": "CONDITION souutsu no rankouka de", "s": 79 }, 
+    { "w": "nenchaku de mo bushou de mo", "s": 81 }, 
+    { "w": "nai ai hitotsu todoke tai noni", "s": 84 }, 
+    { "w": "COMMUNICATION nerai sugi ha subette", "s": 88 }, 
+    { "w": "AUDITION shinbi me mo rougan ni natte", "s": 91 }, 
+    { "w": "haji no ooi shougai nante", "s": 94 }, 
+    { "w": "mezurashii mon ja nai shi", "s": 96 }, 
+    { "w": "daijoubu da yo", "s": 99 }, 
+
+    { "w": "konomi niyotte PARTS ijitte", "s": 111 }, 
+    { "w": "ai wo ataeru bijinesu shitte", "s": 114 }, 
+    { "w": "sugi ta jikan to kono shunkan to", "s": 117 }, 
+    { "w": "nokori jikan ga shinya mazatte", "s": 120 }, 
+
+    { "w": "seki ga hidoku te mizunomi hoshi te", "s": 123 }, 
+    { "w": "shinkokyuu shi te mata kangae ta", "s": 126 }, 
+    { "w": "hana wo susutte heiwa negatte", "s": 129 }, 
+    { "w": "kushami wo shi tara", "s": 130 }, 
+    { "w": "fukitobu shogyoumujou wo", "s": 133 }, 
+
+    { "w": "katsute ha mujaki ni warae ta hito", "s": 136 }, 
+    { "w": "tsuma dui te mo namida korae ta hito", "s": 139 }, 
+    { "w": "dandan kutabire ta kao no hito", "s": 141 }, 
+    { "w": "soshite shiwa no fue ta onaji hito", "s": 145 }, 
+
+    { "w": "nuruku natta hie pita wo torikae te", "s": 148 }, 
+    { "w": "jikan ha mada ushimitsu ji", "s": 151 }, 
+    { "w": "kono kyoku ha nokori ni fun to chotto", "s": 154 }, 
+    { "w": "anata no jumyou ha ato nan nen?", "s": 157 }, 
+
+    { "w": "GRADUATION nyuugaku kara sotsugyou made", "s":162 }, 
+    { "w": "PARTITION suimen ka de kenka shiatte", "s": 165 }, 
+    { "w": "wasure cha ike nai koto igai", "s": 167 }, 
+    { "w": "ha dou demo yoku narya ii noni", "s": 170 }, 
+    { "w": "IMAGINATION shigeki de donka shichatte", "s": 174 }, 
+    { "w": "RELIGION moumoku na sennyuukan de", "s": 177 }, 
+    { "w": "hen gao no ikasu iei datte", "s": 179 }, 
+    { "w": "azatoi to tsutsukareru", "s": 182 }, 
+    { "w": "sonna mon da yo", "s": 184 }, 
+
+    { "w": "norarikurari notauchimawari", "s": 191 }, 
+    { "w": "jiwarijiwari mioboe no nai basho ni", "s": 196 }, 
+
+    { "w": "kanshou kanshou ni mi wo yatsushi te mo", "s": 213 }, 
+    { "w": "hekku sho n hekku sho n", "s": 216 }, 
+    { "w": "kushami ha baka ppoi na", "s": 219 }, 
+    { "w": "guusupii guusupii hana zumari no fue wo", "s": 224 }, 
+    { "w": "aizu ni yoru ga ake te ku", "s": 233 }, 
+
+    { "w": "SLOW MOTION asa ni natte netsu hii te", "s": 240 }, 
+    { "w": "CONDITION kaisei no aotenjou de", "s": 243 }, 
+    { "w": "hansei shi tari choushi koi", "s": 245 }, 
+    { "w": "tari nonbiri kutabatte iku", "s": 248 }, 
+    { "w": "SLOW MOTION aidoru datte toshi kutte", "s": 252 }, 
+    { "w": "wai dosho u nigiwase te hone ni natte", "s": 255 }, 
+    { "w": "umare ta toki to saigo no toki", "s": 257 }, 
+    { "w": "ga yukkuri tsunagaru fushigi", "s": 260 }, 
+
+    { "w": "COMBINATION ii hito ni deau tame", "s": 264 }, 
+    { "w": "kuesu chon ii hito tte donna n ka ne?", "s": 267 }, 
+    { "w": "haji no ooi shougai nante", "s": 269 }, 
+    { "w": "dongara gaccha n sore sore", "s": 271 }, 
+    { "w": "sukkarakan no horehore", "s": 273 }, 
+    { "w": "mezurashii mon ja nai shi", "s": 275 }, 
+    { "w": "daijoubu da yo", "s": 280 }, 
+
+    { "w": "tabun", "s": 284 }, 
+
+    { "w": "SLOW MOTION...", "s": 291 }, 
+
+    { "w": "yukkuri owatte yuku", "s": 300 }
+]

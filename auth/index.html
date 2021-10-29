@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaraokeType</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h3 class="successMessage alert alert-success">E-Mail sent!</h3>
+    <div class="login-page">
+        <div class="form" id="loginForm">
+            <a style="float: left;" href="../">« Back</a>
+            <h5 id="email" class="emailText loggedInLinks">Loading...</h5>
+            <input type="email" placeholder="Email" id="emailInput" class="loggedOutLinks"/>
+            <input type="password" placeholder="password" id="passwordInput" class="loggedOutLinks"/>
+            <div class="row" style="white-space: pre-line; display:grid;">
+                <div class="column">
+                    <h5 class="emailText loggedInLinks">Display Name</h5>
+                    <input type="username" placeholder="Display Name" id="displayNameInput" class="loggedInLinks"/>
+                    <h6 class="emailText loggedInLinks">Leaderboard Color</h6> <input type="color" placeholder="Leaderboard color" id="colorInput" class="loggedInLinks" style="height: 4vw"/>
+                    <button id="saveBtn" class="logoutBtn loggedInLinks">save</button>
+                    <button id="loginBtn" class="loggedOutLinks">sign in</button>
+                    <br>
+                    <button id="googleBtn" class="loggedOutLinks">sign in with google</button>
+                </div>
+                <div class="column">
+                    <button id="registerBtn" class="registerBtn">sign up</button>
+                </div>
+                <br class="loggedOutLinks">
+            </div>
+            <button id="logoutBtn" class="logoutBtn loggedInLinks">log out</button>
+            <input type="text" placeholder="Email" id="forgotEmailInput" class="forgotPasswordLinks"/>
+            <br class="loggedInLinks">
+            <button id="resetPwBtn" class="logoutBtn loggedInLinks">reset password</button>
+            <button id="sendEmailBtn" class="logoutBtn forgotPasswordLinks">send email</button>
+            <div class="loggedOutLinks">
+                <p class="message">Not registered?</p> <a href="#" onclick="switchButton()" id="switchBtn">Create an account</a><a href="#" onclick="switchButton()" id="switchBtn2" class="registerBtn">Log in</a> <span style="color:#5a5a5a; font-family: system-ui;"> | </span>
+                <a href="#" onclick="forgotPassword()" id="forgotPasswordBtn">Forgot Password</a>
+            </div>
+        </div>
+      </div>
+</body>
+<script src="index.js"></script>
+</html>

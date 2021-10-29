@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>KaraokeType</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../header.css">
+  <link rel="icon" href="../keyboardtrans.ico">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Primary Meta Tags -->
+<meta name="title" content="KaraokeType">
+<meta name="description" content="KaraokeType is the best rhythm typing game in the world. Type the lyrics correctly while earning the most points and staying in sync...">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://karaoketype.com/">
+<meta property="og:title" content="KaraokeType">
+<meta property="og:description" content="KaraokeType is the best rhythm typing game in the world. Type the lyrics correctly while earning the most points and staying in sync...">
+<meta property="og:image" content="https://karaoketype.com/karaoketype_new.png">
+<meta property="og:site_name" content="KaraokeType">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://karaoketype.com/">
+<meta property="twitter:title" content="KaraokeType">
+<meta property="twitter:description" content="KaraokeType is the best rhythm typing game in the world. Type the lyrics correctly while earning the most points and staying in sync...">
+<meta property="twitter:image" content="https://karaoketype.com/karaoketype_new.png">
+
+<!-- Discord -->
+<meta name="theme-color" content="#4a4a4a">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6B2FPWSK7H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6B2FPWSK7H');
+</script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading">
+      <a href="../"><img src="../karaoketype_banner.webp" class="logo"/></a>
+      <a class="header-link loggedOutLinks" id="loginBtn" href="../auth/">Log in</a>
+      <a class="header-link loggedInLinks" href="../auth/">Account</a>
+      <a href="../credits.html" class="header-link">Credits</a>
+      <a href="../discord/" class="header-link">Discord</a>
+      <span class='fav_btn header-link loggedInLinks yellow_hover' title="Click to Favorite Song">&#9734;</span> <!-- &#9733; = full star-->
+    </div>
+    <div id="bar">
+	<div class="percent">
+	</div>
+	<div id="circle">
+	</div>
+</div>
+    <div class="header">
+      <div class="errors">
+        <div class="header_text">Score</div>
+        <div class="curr_errors">0</div>
+      </div>
+      <div class="timer">
+        <div class="header_text">Time</div>
+        <div class="curr_time">60s</div>
+      </div>
+      <div class="accuracy">
+        <div class="header_text">Accuracy</div>
+        <div class="curr_accuracy">100%</div>
+      </div>
+    </div>
+
+    <div class="quote">Click on the area below to start the game.</div>
+    <div class="quote_f"></div>
+    <textarea class="input_area" placeholder="start typing here..."
+      autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-gramm="false"
+      rows="1"></textarea>
+    <button class="btm_btn" title="Back to Menu (CTRL + SHIFT + J)">Back to Menu</button><br>
+    <button class="restart_btn" title="Try Again (CTRL + SHIFT + K)">Try Again</button><br>
+    <div class="quote_copy" style="z-index: 1; display: none;">
+      <table class="leaderboard">
+        <tbody><tr>
+          <th>
+            #
+          </th>
+          <th>
+            Player
+          </th>
+          <th>
+            Score
+          </th>
+        </tr></tbody>
+        <tr class="driver">
+        <td class="position">1</td>
+        <td class="driver" style="border-left: 4px solid rgb(0, 210, 190);">aqua_desu<span>03/02/2021</span></td>
+        <td class="gap"><span>3100</span></td>
+        </tr>
+        <tr class="driver">
+          <td class="position">2</td>
+          <td class="driver" style="border-left: 4px solid rgb(0, 210, 190);">real_player <span>17/02/2021</span></td>
+          <td class="gap"><span>2048</span></td>
+        </tr>
+        <tr class="driver">
+          <td class="position">3</td>
+          <td class="driver" style="border-left: 4px solid rgb(220, 0, 0);">ToasterDude <span>03/01/2021</span></td>
+          <td class="gap"><span>1248</span></td>
+        </tr>
+        <tr class="driver">
+          <td class="position">4</td>
+          <td class="driver" style="border-left: 4px solid rgb(30, 65, 255);">LifetimeMistake <span>18/11/2020</span></td>
+          <td class="gap"><span>1247</span></td>
+        </tr>
+        <tr class="driver">
+          <td class="position">5</td>
+          <td class="driver" style="border-left: 4px solid rgb(220, 0, 0);">real_username <span>31/12/2020</span></td>
+          <td class="gap"><span>562</span></td>
+        </tr>
+    </table>
+  </div>
+    <img src="../err.png" class="overlay" id="err_overlay" draggable="false"/>
+    <input type="hidden" id="lbColorInp"/>
+    <footer>
+    <div id="player">
+      <div id="audio"></div>
+      <canvas id="canvas"></canvas>
+    </div>
+    <input class="volume_button" type="range" min="0" max="100" value="100" id="volume_button">
+    </footer>
+  </div>
+  <script src="../songs/lyrics/variables.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+  <script src="game.js" defer async></script>
+</body>
+
+</html>

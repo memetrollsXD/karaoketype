@@ -1,0 +1,64 @@
+<body style="background-color:#4a4a4a">
+<button onclick="eval()">Action</button>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+<script src="songs/lyrics/variables.js"></script>
+<script>
+    function eval() {
+        var firebaseConfig = {
+        apiKey: "AIzaSyBlUYsIM1z937P2GpzHxbP3V9ozZ5hQtuU",
+        authDomain: "karaoketype.com",
+        projectId: "karaoketype",
+        storageBucket: "karaoketype.com",
+        messagingSenderId: "102539409791",
+        appId: "1:102539409791:web:f0f03e0e9fe9af0790424a",
+        measurementId: "G-FRQ2EPN9BN"
+        };
+        firebase.initializeApp(firebaseConfig);
+        /* let d = new Date(); // Set leaderboard for every song
+        let dd = d.getDate();
+        let mm = d.getMonth()+1;
+        const yyyy = d.getFullYear();
+        if (dd<10) { dd='0'+dd; } 
+        if (mm<10) { mm='0'+mm; }
+        d = dd + '/' + mm + '/' + yyyy
+        for (let i = 0; i < all_songs.length; i++) {
+            var opt = all_songs[i];
+            firebase.firestore().collection("leaderboard").doc(opt.CName).set({
+                0: {
+                    displayName: '-',
+                    score: 0,
+                    accuracy: 0,
+                    timestamp: "-",
+                    lbColor: '#000000'
+                }
+            }).then(() => {
+                console.log("Added ", opt.CName)
+            }).catch((error) => {
+                console.error(error)
+            })
+        } */
+        let d = new Date(); // Set leaderboard for every song
+        let dd = d.getDate();
+        let mm = d.getMonth()+1;
+        const yyyy = d.getFullYear();
+        if (dd<10) { dd='0'+dd; } 
+        if (mm<10) { mm='0'+mm; }
+        d = dd + '/' + mm + '/' + yyyy
+        firebase.firestore().collection("leaderboard").doc("the_emperors_time").set({
+            0: {
+                displayName: '-',
+                score: 0,
+                accuracy: 0,
+                timestamp: "-",
+                lbColor: '#000000'
+            }
+        }).then(() => {
+            console.log("Added ")
+        }).catch((error) => {
+            console.error(error)
+        })
+    }
+</script>

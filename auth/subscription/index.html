@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>KaraokeType</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../header.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading">
+      <a href="./"><img src="../../karaoketype_banner.png" class="logo"/></a>
+      <a href="../../discord/" class="header-link">Discord</a>
+    </div>
+
+    <div class="quote"><h3>Premium</h3><h6>Status: <span style="color: lime">Active</span></h6>
+        <div id="paypal-button-container-P-2WT9985197450505VMDRCKEQ"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AZiCqXDGBFGOXuftHM1ey5zfb8OkCSDxVf-NnOUDWLfLrdb_XJYM1RqOMtbAq6Zq9wV9fPg-xMOvj44S&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script> 
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-2WT9985197450505VMDRCKEQ'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-2WT9985197450505VMDRCKEQ'); // Renders the PayPal button
+</script>
+    </div>
+  </div>
+</body>
+
+</html>

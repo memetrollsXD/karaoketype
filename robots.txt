@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /import/
+Disallow: /songs/
+Disallow: /admin/
+
+
+Sitemap: https://karaoketype.com/sitemap.xml
