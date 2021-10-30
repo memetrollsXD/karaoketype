@@ -431,6 +431,6 @@ body::-webkit-scrollbar-thumb
   margin-bottom: -6px;
 }
 
-.step2, .step3 {
+.loggedInLinks {
   display: none;
 }

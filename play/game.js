@@ -586,6 +586,16 @@
     circle.style.left = prc + "%";
   };
 
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      document.querySelectorAll('.loggedInLinks').forEach(element => element.style.display = "block")
+      document.querySelectorAll('.loggedOutLinks').forEach(element => element.style.display = "none")
+    } else {
+      document.querySelectorAll('.loggedInLinks').forEach(element => element.style.display = "none")
+      document.querySelectorAll('.loggedOutLinks').forEach(element => element.style.display = "block")
+    }
+  });
+
   let loadallEvents = function () {
     input_area.onfocus = function () {
       startGame();
