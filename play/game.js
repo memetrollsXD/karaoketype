@@ -244,7 +244,9 @@
 
   let startGame = function () {
     if (!started) {
-      firebase.firestore().collection("users")
+      firebase
+        .firestore()
+        .collection("users")
         .doc(firebase.auth().currentUser.uid)
         .get()
         .then((doc) => {
@@ -263,9 +265,9 @@
       koi_song = playsong(url);
       koi_song.play();
       // Are you sure you want to leave the page?
-      window.onbeforeunload = function() {
+      window.onbeforeunload = function () {
         return true;
-    };
+      };
     } else {
       console.info("Game already started, not re-starting...");
     }
@@ -428,20 +430,24 @@
           if (i < 10) {
             let pos = i + 1;
             let daeta = sortable[i][1];
-            template += `
-            <tr class="driver leaderboard_all">
-            <td class="position">${pos}</td>
-            <td class="driver" style="border-left: 4px solid ${daeta.lbColor}">${daeta.displayName}<span>${daeta.timestamp}</span></td>
-            <td class="gap"><span>${daeta.score}</span></td>
-            </tr>
-            `;
-            // template += `
-            // <tr class="driver leaderboard_all">
-            // <td class="position">${pos}</td>
-            // <td class="driver" style="border-left: 4px solid ${daeta.lbColor}">${daeta.displayName}<span><img class="ktypepro" src="../ktypepro.svg" draggable="false" alt="KaraokeType Pro"/></span><span>${daeta.timestamp}</span></td>
-            // <td class="gap"><span>${daeta.score}</span></td>
-            // </tr>
-            // ` Premium Logo
+            pro = !db.collection("subscriptions").doc(sortable[i][0]).get().then((doc) => { return doc.exists; })
+            if (pro) {
+              template += `
+              <tr class="driver leaderboard_all">
+              <td class="position">${pos}</td>
+              <td class="driver" style="border-left: 4px solid ${daeta.lbColor}">${daeta.displayName}<span><img class="ktypepro" src="../ktypepro.svg" draggable="false" alt="KaraokeType Pro"/></span><span>${daeta.timestamp}</span></td>
+              <td class="gap"><span>${daeta.score}</span></td>
+              </tr>
+              `;
+            } else {
+              template += `
+              <tr class="driver leaderboard_all">
+              <td class="position">${pos}</td>
+              <td class="driver" style="border-left: 4px solid ${daeta.lbColor}">${daeta.displayName}<span>${daeta.timestamp}</span></td>
+              <td class="gap"><span>${daeta.score}</span></td>
+              </tr>
+              `;
+            }
           }
         }
         document.querySelector(".leaderboard").innerHTML = template;
@@ -451,7 +457,12 @@
   let saveLeaderboard = function () {
     // I'm gonna do the timestamp here so that it doesn't become a clusterfuck on the function
     dateObj = new Date();
-    newdate = dateObj.getUTCDate() + "/" + (dateObj.getUTCMonth() + 1) + "/" + dateObj.getUTCFullYear();
+    newdate =
+      dateObj.getUTCDate() +
+      "/" +
+      (dateObj.getUTCMonth() + 1) +
+      "/" +
+      dateObj.getUTCFullYear();
     dpName = firebase.auth().currentUser.displayName;
     leadColor = document.getElementById("lbColorInp").value;
     scoreval = Math.floor(scoreGiven);
@@ -464,15 +475,22 @@
         timestamp: newdate,
       },
     };
-      firebase.firestore().collection("leaderboard").doc(audioname).get().then((doc) => {
-        oldscore = doc.data()[firebase.auth().currentUser.uid].score
-      })
-    if (typeof oldscore !== 'undefined') {
+    firebase
+      .firestore()
+      .collection("leaderboard")
+      .doc(audioname)
+      .get()
+      .then((doc) => {
+        oldscore = doc.data()[firebase.auth().currentUser.uid].score;
+      });
+    if (typeof oldscore !== "undefined") {
       if (scoreval > oldscore) {
-        db.collection("leaderboard").doc(audioname).set(lbData, { merge: true });
-      };
+        db.collection("leaderboard")
+          .doc(audioname)
+          .set(lbData, { merge: true });
+      }
     }
-  }
+  };
 
   window.addEventListener("load", getParameter, false);
   let canvas,
@@ -586,13 +604,21 @@
     circle.style.left = prc + "%";
   };
 
-  firebase.auth().onAuthStateChanged(function(user) {
+  firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
-      document.querySelectorAll('.loggedInLinks').forEach(element => element.style.display = "block")
-      document.querySelectorAll('.loggedOutLinks').forEach(element => element.style.display = "none")
+      document
+        .querySelectorAll(".loggedInLinks")
+        .forEach((element) => (element.style.display = "block"));
+      document
+        .querySelectorAll(".loggedOutLinks")
+        .forEach((element) => (element.style.display = "none"));
     } else {
-      document.querySelectorAll('.loggedInLinks').forEach(element => element.style.display = "none")
-      document.querySelectorAll('.loggedOutLinks').forEach(element => element.style.display = "block")
+      document
+        .querySelectorAll(".loggedInLinks")
+        .forEach((element) => (element.style.display = "none"));
+      document
+        .querySelectorAll(".loggedOutLinks")
+        .forEach((element) => (element.style.display = "block"));
     }
   });
 
