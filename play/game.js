@@ -244,14 +244,11 @@
 
   let startGame = function () {
     if (!started) {
-      firebase
-        .firestore()
-        .collection("users")
-        .doc(firebase.auth().currentUser.uid)
-        .get()
-        .then((doc) => {
+      if (firebase.auth().currentUser) {
+      firebase.firestore().collection("users").doc(firebase.auth().currentUser.uid).get().then((doc) => {
           document.getElementById("lbColorInp").value = doc.data().lbColor;
         });
+      }
       started = true;
       document.querySelector(".quote_copy").style.display = "none";
       resetValues();
