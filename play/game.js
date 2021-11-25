@@ -398,10 +398,8 @@
   };
   let db = firebase.firestore();
   let loadLeaderboard = function () {
-    db.collection("leaderboard")
-      .doc(audioname)
-      .get()
-      .then((doc) => {
+    db.collection("leaderboard").doc(audioname).get().then((doc) => {
+      if (doc.exists) {
         const data = doc.data();
         let sortable = [];
         for (var vehicle in data) {
@@ -449,30 +447,42 @@
         }
         document.querySelector(".leaderboard").innerHTML = template;
         document.querySelector(".quote_copy").style.display = "flex";
+      } else {
+        lbData = {
+          0: {
+            accuracy: 0,
+            displayName: "-",
+            lbColor: "#000000",
+            score: 0,
+            timestamp: "-",
+          }};
+        db.collection("leaderboard").doc(audioname).set(lbData, { merge: true});
+      }
       });
   };
-  let saveLeaderboard = function () {
-    // I'm gonna do the timestamp here so that it doesn't become a clusterfuck on the function
-    dateObj = new Date();
-    newdate =
-      dateObj.getUTCDate() +
-      "/" +
-      (dateObj.getUTCMonth() + 1) +
-      "/" +
-      dateObj.getUTCFullYear();
-    dpName = firebase.auth().currentUser.displayName;
-    leadColor = document.getElementById("lbColorInp").value;
-    scoreval = Math.floor(scoreGiven);
-    lbData = {
-      [firebase.auth().currentUser.uid]: {
-        accuracy: accuracyVal,
-        displayName: dpName,
-        lbColor: leadColor,
-        score: scoreval,
-        timestamp: newdate,
-      },
-    };
-    db.collection("leaderboard").doc(audioname).set(lbData, { merge: true });
+  let saveLeaderboard = async function () {
+    let lbdata = undefined;
+    // Check if has a higher score to submit
+    await db.collection("leaderboard").doc(audioname).get().then((doc) => {
+      lbdata = doc.data();
+    });
+    if (parseInt(lbdata[firebase.auth().currentUser.uid].score) > Math.floor(scoreGiven)) {
+      // I'm gonna do the timestamp here so that it doesn't become a clusterfuck on the function
+      dateObj = new Date();
+      newdate = dateObj.getUTCDate() + "/" + (dateObj.getUTCMonth() + 1) + "/" + dateObj.getUTCFullYear();
+      dpName = firebase.auth().currentUser.displayName;
+      leadColor = document.getElementById("lbColorInp").value;
+      scoreval = Math.floor(scoreGiven);
+      lbData = {
+        [firebase.auth().currentUser.uid]: {
+          accuracy: accuracy_text.textContent.substring((0, accuracy_text.textContent.length()-1)),
+          displayName: dpName,
+          lbColor: leadColor,
+          score: scoreval,
+          timestamp: newdate,
+        }};
+      db.collection("leaderboard").doc(audioname).set(lbData, { merge: true }); 
+    }
   };
 
   window.addEventListener("load", getParameter, false);

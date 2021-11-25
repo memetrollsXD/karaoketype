@@ -1,0 +1,84 @@
+[
+    { "w": "tatatatatata...", "s": 1 }, 
+    { "w": "tatatatatatatatatata...", "s": 4 }, 
+    { "w": "tatatatatatatatatatatatatatatatatatatatatatatatatata...", "s": 6 }, 
+    { "w": "tatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatata", "s": 7 }, 
+
+    { "w": "tanaka tanatana tanaka kakattana", "s": 9 }, 
+    { "w": "tanaka kanakana tanakattakana", "s": 12 }, 
+    { "w": "tanaka tanatana tanakattana", "s": 14 }, 
+    { "w": "tanaka tanatana tanaka nakanaka", "s": 16 }, 
+    { "w": "tanaka tanatana tanaka kakattana", "s": 19 }, 
+    { "w": "tanaka kanakana tanakattakana", "s": 21 }, 
+    { "w": "tanaka tanatana tanakattana", "s": 23 }, 
+    { "w": "tanaka tanatana tanakana tanaka", "s": 26 }, 
+
+    { "w": "tanaka tanakatta tanaka ", "s": 28 }, 
+    { "w": "tanaka natakatta tanaka ", "s": 30 }, 
+    { "w": "tanaka takakatta tanaka", "s": 32 }, 
+    { "w": "tanaka tatakatta tanaka", "s": 34 }, 
+    { "w": "tanaka katatta tanaka", "s": 36 }, 
+    { "w": "tanaka tatatta tanaka", "s": 38 }, 
+    { "w": "tanaka kakatta tanaka", "s": 40 }, 
+    { "w": "tanaka nakanakattakana tanaka", "s": 42 }, 
+    { "w": "tanakakana nakatakana", "s": 44 }, 
+    { "w": "nakatakana kanatakana", "s": 46 }, 
+    { "w": "na~", "s": 48 }, 
+
+    { "w": "tanaka tanatana tanaka kakattana", "s": 50 }, 
+    { "w": "tanaka kanakana tanakattakana", "s": 52 }, 
+    { "w": "tanaka tanatana tanakattana", "s": 55 }, 
+    { "w": "tanaka tanatana tanakakana tatata", "s": 58 }, 
+
+    { "w": "takana tanaka takanakatta", "s": 59 }, 
+    { "w": "tanaka takanakatta kakata", "s": 62 }, 
+    { "w": "katanatakana tanakakatta", "s": 61 }, 
+    { "w": "tanakakakka kakka", "s": 62 }, 
+    { "w": "takanananaka tanakatatta", "s": 63 }, 
+    { "w": "tanatakatta tanaka", "s": 64 }, 
+    { "w": "tanakatakana nattakakata", "s": 66 }, 
+    { "w": "tanaka tatatatakatta", "s": 67 }, 
+
+    { "w": "tatatatatatatatatatatatatatatatatatatatatatatatata", "s": 68 }, 
+
+    { "w": "tanaka, katatta", "s": 73 }, 
+    { "w": "tanaka, katanakatta", "s": 77 }, 
+    { "w": "tanaka, tatakatta", "s": 80 }, 
+    { "w": "tanaka, nakanakatta", "s": 83 }, 
+    { "w": "tanaka, katta!", "s": 87 }, 
+
+    { "w": "tatatatatatata", "s": 89 }, 
+
+    { "w": "tanakattakatta nanatanaka", "s": 91 }, 
+    { "w": "takakattakatta tanakanakakka", "s": 94 }, 
+    { "w": "katta-kattakatta tanakatta-", "s": 96 }, 
+    { "w": "tatatakattakatta tanakatta", "s": 98 }, 
+
+
+    { "w": "tanaka tanatana tanaka kakattana", "s": 100 }, 
+    { "w": "tanaka kanakana tanakattakana", "s": 103 }, 
+    { "w": "tanaka tanatana tanakattana", "s": 105 }, 
+    { "w": "tanaka tanatana tanakakana", "s": 107 }, 
+    { "w": "tatta!", "s": 108 }, 
+
+
+    { "w": "tanaka tanatana tanaka kakattana", "s": 110 }, 
+    { "w": "tanaka kanakana tanakattakana", "s": 113 }, 
+    { "w": "tanaka tanatana tanakattana", "s": 115 }, 
+    { "w": "tanaka tanatana tanaka", "s": 117 }, 
+    { "w": "tatta-", "s": 118 }, 
+
+    { "w": "tanakatanakatananatanakatanakaka", "s": 119 }, 
+    { "w": "takanatakanatakattakanana", "s": 120 }, 
+    { "w": "katanakatanakatananakanakanakatakana", "s": 122 }, 
+    { "w": "nakanakattananatanaka", "s": 122 }, 
+
+    { "w": "tanatanatanaka tanakattana", "s": 125 }, 
+    { "w": "tanakatanatana tanakatanaka", "s": 127 }, 
+
+    { "w": "tatatatatatatatatatatatatatatatata...", "s": 128 }, 
+    { "w": "tatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatata...", "s": 129 }, 
+    { "w": "tatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatata", "s": 131 }, 
+
+    { "w": "TA", "s": 133 }
+]

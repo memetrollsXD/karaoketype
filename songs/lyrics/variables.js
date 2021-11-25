@@ -342,6 +342,15 @@ var all_songs = [
     RWpm: 180
   },
   {
+    Time: 135,
+    Name: "Rishi - Tanaka",
+    CName: "tanaka",
+    Difficulty: 5,
+    Ref: 2,
+    Categories: ["Japanese", "Memes"],
+    RWpm: 250
+  },
+  {
     Time: "-",
     Name: "Random",
     CName: "-",
